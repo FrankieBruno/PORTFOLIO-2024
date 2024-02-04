@@ -1,0 +1,198 @@
+.projects {
+    height: calc(100vh - 6.75em);
+}
+
+.projectsmedia {
+    position: relative;
+    height: 60%;
+}
+
+.projectsfg {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+    height: 83%;
+    z-index: 2;
+
+    opacity: 0;
+    transform: translateY(40%) ;
+
+
+    animation: fgfadein .4s forwards .8s;
+}
+@keyframes fgfadein {
+    from {
+        opacity: 0;
+        transform: translateY(40%) ;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%) 
+    }
+}
+
+.projectsbg {
+    position: absolute;
+    
+    height: 85%;
+    width: 0%;
+
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+
+    animation: bgfadein 1s forwards .4s;
+
+    border-radius: 2em 0 0 2em;
+}
+
+@keyframes bgfadein {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+
+.projectsintro {
+    display: flex;
+    flex-direction: column;
+}
+
+.introheading {
+    font-weight: 600;
+    font-size: 2.5em;
+    // width: 100%;
+    // margin: 1.5em 2em 1.25em auto;
+
+    margin: .95em auto 1.25em auto;
+    text-align: center;
+}
+
+.introcolumn {
+    // width: 50%;
+    margin-left: auto;
+
+}
+
+.introlists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introlist {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 1.4em;
+}
+
+.introlistheading {
+    font-weight: 700;
+    font-size: 2.2em;
+    margin-bottom: .7em;
+}
+
+.introlistitem {
+    display: flex;
+    flex-direction: column;;
+    margin-bottom: .3em;
+}
+
+.technicallist .introlistitem {
+    margin-bottom: .7em;
+}
+
+.introsubheading {
+    font-weight: 700;
+}
+
+.introsubvalue {
+
+}
+
+
+.gridtitle {
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+}
+
+.projectsgrid {
+    margin: 1em .8em 4em 1em;
+    // margin-bottom: 2em;
+}
+
+.project {
+    flex: 50% 0 0;
+}
+
+.projectimg {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+}
+
+.footerDiv {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+@media screen and (min-width: 800px) {
+
+    .projectsmedia {
+        height: 100%;
+    }
+
+    .projectsfg {
+        left: 5em;
+    }
+
+    .introheading {
+        font-size: 3.75em;
+        margin: 1.5em auto 1.25em auto;
+        text-align: center;
+        max-width: 1000px;
+    }
+
+    .introcolumn {
+        width: 80%;
+        margin: auto;
+    }
+
+    .projectcolumn {
+        margin: auto;
+        max-width: 1200px;
+    }
+
+    .introlists {
+        justify-content: center;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10%;
+    }
+
+    .gridtitle {
+        font-size: 4.3em;
+    }
+
+    .projectsgrid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (min-width: 624px) {
+    .introheading {
+        width: 80%;
+    }
+
+}

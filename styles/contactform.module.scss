@@ -1,0 +1,74 @@
+.form {
+    text-align: left;
+    
+    color: white;
+    background: #001011;
+    border-radius: 3em 0 0 0;
+
+    width: 100%;
+    padding: 3.4em 2em;
+    box-sizing: border-box;
+
+}
+
+.contacttext {
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.contacttext > span {
+    display: block;
+    margin-bottom: 2em;
+}
+
+.offer {
+    line-height: 1.5em;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.emaillink {
+    text-decoration: none;
+    background: #FBFFFE;
+    padding: .8em 2em; 
+    border-radius: .3em;
+    font-weight: 800;
+    color: black;
+    margin-right: 2em;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions span {
+    display: block;
+}
+
+span.emaillinkinfo {
+    display: none;
+    
+}
+
+@media screen and (min-width: 800px) {
+    
+    .form {
+        padding: 5.5em 7em 3em 5.7em;
+        margin-left: auto;
+        width: 56%;
+    }
+
+    span.emaillinkinfo {
+        display: block;
+        font-size: .75em;
+    }
+
+    
+}

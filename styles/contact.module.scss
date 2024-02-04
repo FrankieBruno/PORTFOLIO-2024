@@ -1,0 +1,40 @@
+.contact {
+    margin: auto;
+    margin-top: 5em;
+    width: 80%;
+}
+
+.contactheading {
+    font-weight: 700;
+    font-size: 2em;
+    width: 60%;
+}
+
+.contactdetails {}
+
+.contactdetails span {
+    display: block;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.link {
+    color: rgb(55, 55, 238);
+    margin-left: .2em;
+}
+
+.iconLine {
+    display: flex;
+}
+
+.spanItem {
+    margin-left: 0.5em;
+}
+
+@media screen and (min-width: 800px) {
+    .contactheading {
+        font-weight: 700;
+        font-size: 3em;
+        width: 100%;
+    }
+}

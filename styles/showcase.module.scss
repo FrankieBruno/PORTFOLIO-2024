@@ -1,0 +1,108 @@
+.heading {
+    flex-grow: 0;
+    font-weight: 700;
+    font-size: 4em;
+    margin: 0;
+    // height: 2.5em;
+}
+
+.projectwrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 13.75em);
+    margin: 7em 2em 0 5em;
+    overflow: hidden;
+}
+
+.projectcontent {
+    display: flex;
+    height: calc(100% - 3em);
+    flex-grow: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.projectdetails {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    flex: 30% 0 0;
+}
+
+.projectsummary {
+    margin-top: 6em;
+
+
+}
+
+.projectaccess {
+    margin: auto 0 6em;
+}
+
+.repositorylogin {
+    line-height: 1.5em;
+}
+
+.projectlinks {
+    margin-top: 2em;
+    display: flex;
+}
+
+.projectlinks a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    background: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: .7em 1.4em;
+    font-family: inherit;
+}
+
+.repository {
+    border: .12em black solid;
+    border-radius: 0.3em;
+}
+
+.githubicon {
+    width: 1.8em;
+    margin-left: .5em;
+}
+
+.livesite {
+    border: none;
+}
+
+.linkicon {
+    width: 1.5em;
+    margin-left: .5em;
+}
+
+.projectdisplay {
+    position: relative;
+    flex: 50% 0 0;
+    margin-right: 3em;
+}
+
+.projectdisplay img {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
+
+}
+
+.projectdisplay:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    height: 80%;
+    width: 3em;
+    right: 0;
+    bottom: 50%;
+    z-index: -1;
+    border-radius: 1em;
+    transform: translate(0, 50%);
+    background: #1e1e1e;
+}

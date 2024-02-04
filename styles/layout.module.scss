@@ -1,0 +1,124 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1em 1em 0;
+
+    height: 3.75em;
+    align-items: center;
+}
+
+.brand {
+    display: none;
+    font-size: 1.8em;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+.layoutContainer {
+    height: 100vh;
+}
+
+.logo {
+    width: 3em;
+}
+
+.brandgreeting {
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    font-size: .9em;
+    align-items: center;
+    z-index: 1;
+    animation: navfadein .2s forwards 0s;
+
+    opacity: 0;
+    transform: translateY(40%) ;
+}
+
+@keyframes navfadein {
+    from {
+        opacity: 0;
+        transform: translateY(40%) ;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%) 
+    }
+}
+
+
+.navitem {
+    color: #000;
+    text-decoration: none;
+    margin-right: 2em;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.navcontact {
+    font-weight: 900;
+}
+
+.download {
+    display:flex;
+    align-items: center;
+}
+
+.downloadicon {
+    width: 1em;
+    margin-left: .3em;
+}
+
+@media screen and (min-width: 480px) {
+    .nav {
+        font-size: 1.2em;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    
+        padding: 3em 2em 0;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .nav {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .nav {
+
+    }
+
+    .brandmobile {
+        display: none;
+    }
+
+    .brand {
+        display: block;
+
+        opacity: 0;
+        transform: translateY(30%) ;
+        animation: brandfadein .2s forwards 0s;
+    }
+
+    @keyframes brandfadein {
+        from {
+            opacity: 0;
+            transform: translateY(40%) ;
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0%) 
+        }
+    }
+}
