@@ -103,9 +103,6 @@ export default function Projects() {
 
           <div className={styles.projectcolumn}>
             <div className={styles.projectsgrid}>
-              <Link href='/projects/levelup' className={styles.project}>
-                <img className={styles.projectimg} src="/projects/levelup/small.png" />
-              </Link>
               <Link href='/projects/honeyrae' className={styles.project}>
                 <img className={styles.projectimg} src="/projects/honeyrae/small.png" />
               </Link>
