@@ -24,7 +24,7 @@ export default function Showcase({ name, description, repository, livesite }) {
                     </div>
                     <div className={styles.projectaccess}>
                         <span className={styles.repositorylogin}>
-                            USERNAME: frankiebruno <br />
+                            USERNAME/EMAIL: frankiebruno@gmail.com <br />
                             PASSWORD: Archvile1991
                         </span>
                         <div className={`${styles.projectlinks} ${inter.className}`}>
