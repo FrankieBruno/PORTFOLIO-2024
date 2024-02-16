@@ -25,7 +25,7 @@ const PROJECTS_DATA = {
     HONEYRAE: {
         name: 'Honey Rae',
         description: 'Welcome to Honey Rae, an online electronics repair shop. Brought together using HTML, CSS, JavaScript, React, Python, and Django. This site, designed to meet the C.R.U.D. (Create, Read, Update, Delete) requirements',
-        repository: 'https://github.com/FrankieBruno/honey-rae-client.git',
+        repository: 'https://github.com/FrankieBruno/HONEY-RAE-CLI.git',
         livesite: 'https://honey-rae.netlify.app/'
     }
 // name
