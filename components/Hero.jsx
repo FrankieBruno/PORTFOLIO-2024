@@ -9,8 +9,12 @@ export default function Hero(){
                 <span className={styles.credentialslabel}>Credentials</span>
                 <ul className={styles.credentialslist}>
                     <li>
+                        <span className={styles.credentialname}>Scrum Master</span> 
+                        <span className={styles.credentialdate}>Scrum Alliance Certification | 2024</span>
+                    </li>
+                    <li>
                         <span className={styles.credentialname}>Cyber Security Analyst</span> 
-                        <span className={styles.credentialdate}>Coursera Google certificate - Ongoing</span>
+                        <span className={styles.credentialdate}>Coursera Google Certificate | 2024</span>
                     </li>
                     <li>
                         <span className={styles.credentialname}>Nashville Software School</span>
