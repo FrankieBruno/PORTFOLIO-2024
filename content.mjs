@@ -16,22 +16,12 @@ const PROJECTS_DATA = {
         repository: 'https://github.com/FrankieBruno/movie-app-client.git',
         livesite: 'https://brunos-movie-site.netlify.app'
     },
-    // LEVELUP: {
-    //     name: 'Level Up',
-    //     description: 'Welcome to Level Up, a website for creating and scheduling board games for friends and family to meetup and play together. This experience was brought together using HTML, CSS, JavaScript, React, Python, and Django. This site, designed to meet the C.R.U.D. (Create, Read, Update, Delete) requirements.',
-    //     repository: 'https://github.com/FrankieBruno/levelup-client.git',
-    //     livesite: 'https://level-up-app.netlify.app/'
-    // },
     HONEYRAE: {
         name: 'Honey Rae',
         description: 'Welcome to Honey Rae, an online electronics repair shop. Brought together using HTML, CSS, JavaScript, React, Python, and Django. This site, designed to meet the C.R.U.D. (Create, Read, Update, Delete) requirements',
         repository: 'https://github.com/FrankieBruno/HONEY-RAE-CLI.git',
         livesite: 'https://honey-rae.netlify.app/'
     }
-// name
-// description
-// repistory link
-// livesite
 };
 
 export default PROJECTS_DATA;
