@@ -14,11 +14,11 @@ export default function Hero(){
                     </li>
                     <li>
                         <span className={styles.credentialname}>Cyber Security Analyst</span> 
-                        <span className={styles.credentialdate}>Coursera Google Certificate | 2024</span>
+                        <span className={styles.credentialdate}>Coursera Google Certification | 2024</span>
                     </li>
                     <li>
                         <span className={styles.credentialname}>Nashville Software School</span>
-                        <span className={styles.credentialdate}>January 2023 - June 2023</span>
+                        <span className={styles.credentialdate}>Web Development Certification January 2023 - June 2023</span>
                     </li>
                     <li>
                         <span className={styles.credentialname}>University of Louisiana at Lafayette</span>
