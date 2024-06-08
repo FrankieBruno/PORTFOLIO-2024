@@ -109,8 +109,8 @@ export default function Projects() {
               <Link href='/projects/stickerstorm' className={styles.project}>
                 <img className={styles.projectimg} src="/projects/stickerstorm/small.png" />
               </Link>
-              <Link href='/projects/land' className={styles.project}>
-                <img className={styles.projectimg} src="/projects/land/small.png" />
+              <Link href='/projects/movieland' className={styles.project}>
+                <img className={styles.projectimg} src="/projects/movieland/small.png" />
               </Link>
 
             </div>
