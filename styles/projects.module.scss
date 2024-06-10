@@ -1,199 +1,264 @@
-.projects {
-    height: calc(100vh - 6.75em);
+.heading {
+    flex-grow: 0;
+    font-weight: 700;
+    font-size: 4em;
+    margin: 0;
+    // height: 2.5em;
 }
 
-.projectsmedia {
-    position: relative;
-    height: 60%;
-}
-
-.projectsfg {
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
-    height: 83%;
-    z-index: 2;
-
-    opacity: 0;
-    transform: translateY(40%) ;
-
-
-    animation: fgfadein .4s forwards .8s;
-}
-@keyframes fgfadein {
-    from {
-        opacity: 0;
-        transform: translateY(40%) ;
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0%) 
-    }
-}
-
-.projectsbg {
-    position: absolute;
-    
-    height: 85%;
-    width: 0%;
-
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    object-fit: cover;
-    object-position: center;
-
-    animation: bgfadein 1s forwards .4s;
-
-    border-radius: 2em 0 0 2em;
-}
-
-@keyframes bgfadein {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 80%;
-    }
-}
-
-
-.projectsintro {
+.projectwrapper {
     display: flex;
     flex-direction: column;
+    height: calc(100vh - 13.75em);
+    margin: 7em 2em 0 5em;
+    overflow: hidden;
 }
 
-.introheading {
-    font-weight: 600;
-    font-size: 2.5em;
-    // width: 100%;
-    // margin: 1.5em 2em 1.25em auto;
-
-    margin: .95em auto 1.25em auto;
-    text-align: center;
+.projectcontent {
+    display: flex;
+    height: calc(100% - 3em);
+    flex-grow: 1;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.introcolumn {
-    // width: 50%;
-    margin-left: auto;
-
-}
-
-.introlists {
+.projectdetails {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    flex: 30% 0 0;
+}
+
+.projectsummary {
+    margin-top: 6em;
+}
+
+.projectaccess {
+    margin: auto 0 6em;
+}
+
+.repositorylogin {
+    line-height: 1.5em;
+}
+
+.projectlinks {
+    margin-top: 2em;
+    display: flex;
+}
+
+.projectlinks a {
+    display: flex;
+    text-decoration: none;
+    color: black;
     align-items: center;
+    background: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: .7em 1.4em;
+    font-family: inherit;
 }
 
-.introlist {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 1.4em;
+.repository {
+    border: .12em black solid;
+    border-radius: 0.3em;
 }
 
-.introlistheading {
-    font-weight: 700;
-    font-size: 2.2em;
-    margin-bottom: .7em;
+.githubicon {
+    width: 1.8em;
+    margin-left: .5em;
 }
 
-.introlistitem {
-    display: flex;
-    flex-direction: column;;
-    margin-bottom: .3em;
+.livesite {
+    border: none;
 }
 
-.technicallist .introlistitem {
-    margin-bottom: .7em;
+.linkicon {
+    width: 1.5em;
+    margin-left: .5em;
 }
 
-.introsubheading {
-    font-weight: 700;
-}
-
-.introsubvalue {
-
-}
-
-
-.gridtitle {
-    font-weight: 700;
-    font-size: 3em;
-    text-align: center;
-}
-
-.projectsgrid {
-    margin: 1em .8em 4em 1em;
-    // margin-bottom: 2em;
-}
-
-.project {
+.projectdisplay {
+    position: relative;
     flex: 50% 0 0;
+    margin-right: 3em;
 }
 
-.projectimg {
-    max-width: 100%;
+.projectdisplay img {
+    display: block;
     min-width: 0;
-    width: 100%;
+    max-width: 100%;
 }
 
-.footerDiv {
-    display: flex;
-    justify-content: center;
-    margin: 1em 0;
+.projectdisplay:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    height: 80%;
+    width: 3em;
+    right: 0;
+    bottom: 50%;
+    z-index: -1;
+    border-radius: 1em;
+    transform: translate(0, 50%);
+    background: #1e1e1e;
 }
 
-@media screen and (min-width: 800px) {
+/* Media Queries for Responsive Design */
 
-    .projectsmedia {
-        height: 100%;
+/* General mobile adjustments */
+@media screen and (max-width: 800px) {
+    .projectwrapper {
+        margin: 5em 1em 0 1em;
     }
 
-    .projectsfg {
-        left: 5em;
-    }
-
-    .introheading {
-        font-size: 3.75em;
-        margin: 1.5em auto 1.25em auto;
+    .heading {
+        font-size: 2.5em;
         text-align: center;
-        max-width: 1000px;
+        margin: 0 0 1em 0;
     }
 
-    .introcolumn {
-        width: 80%;
-        margin: auto;
+    .projectcontent {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .projectcolumn {
-        margin: auto;
-        max-width: 1200px;
+    .projectsummary {
+        margin-top: 2em;
+        text-align: center;
     }
 
-    .introlists {
-        justify-content: center;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 10%;
+    .projectaccess {
+        margin: 2em 0;
+        text-align: center;
     }
 
-    .gridtitle {
-        font-size: 4.3em;
+    .projectdetails {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        padding: 0 1em;
     }
 
-    .projectsgrid {
-        display: flex;
-        flex-wrap: wrap;
+    .projectdisplay {
+        margin: 2em 0;
+        width: 100%; /* Ensure the container takes full width */
+        height: auto; /* Ensure the container height is automatic */
+    }
+
+    .projectdisplay img {
+        width: 100%; /* Ensure image fills the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .projectlinks {
+        flex-direction: column; /* Adjust for mobile view */
+        align-items: center; /* Center align for mobile view */
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .projectlinks a {
+        margin-bottom: 1em; /* Add margin for spacing */
+        width: 100%;
         justify-content: center;
     }
 }
 
-
-@media screen and (min-width: 624px) {
-    .introheading {
-        width: 80%;
+/* Tablet adjustments */
+@media screen and (max-width: 1024px) {
+    .projectwrapper {
+        margin: 5em 2em 0 2em;
     }
 
+    .heading {
+        font-size: 3em;
+    }
+
+    .projectdisplay {
+        margin-right: 0;
+    }
+
+    .projectdisplay img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Specific adjustments for smaller mobile screens */
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 2em;
+    }
+
+    .projectsummary {
+        margin-top: 2em;
+    }
+
+    .projectaccess {
+        margin: 1em 0 2em;
+    }
+
+    .projectlinks a {
+        padding: .5em 1em;
+        font-size: 0.9em;
+    }
+
+    .repositorylogin {
+        font-size: 0.9em;
+    }
+}
+
+/* Adjustments for new iPhone sizes */
+@media screen and (max-width: 414px) {
+    .projectwrapper {
+        margin: 4em 1em 0 1em;
+    }
+
+    .heading {
+        font-size: 1.8em;
+    }
+
+    .projectdisplay {
+        margin-right: 0;
+    }
+
+    .projectdisplay img {
+        width: 100%;
+        height: auto;
+    }
+
+    .projectlinks a {
+        padding: .5em 1em;
+        font-size: 0.8em;
+    }
+}
+
+/* Adjustments for new Android sizes */
+@media screen and (max-width: 360px) {
+    .projectwrapper {
+        margin: 4em 0.5em 0 0.5em;
+    }
+
+    .heading {
+        font-size: 1.5em;
+    }
+
+    .projectdisplay {
+        margin-right: 0;
+    }
+
+    .projectdisplay img {
+        width: 100%;
+        height: auto;
+    }
+
+    .projectlinks a {
+        padding: .4em 0.8em;
+        font-size: 0.8em;
+    }
+
+    .repositorylogin {
+        font-size: 0.8em;
+    }
 }
