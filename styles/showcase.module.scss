@@ -105,9 +105,7 @@
 }
 
 /* Media Queries for Responsive Design */
-
-/* General mobile adjustments */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 2000px) {
     .projectwrapper {
         margin: 5em 1em 0 1em;
     }
@@ -150,100 +148,45 @@
     }
 }
 
-/* Tablet adjustments */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 2000px) {
     .projectwrapper {
-        margin: 5em 2em 0 2em;
+        margin: 5em 1em 0 1em;
     }
 
     .heading {
-        font-size: 3em;
+        font-size: 2.5em;
+        text-align: center;
     }
 
-    .projectdisplay {
-        margin-right: 1em;
-    }
-
-    .projectdisplay img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Specific adjustments for smaller mobile screens */
-@media screen and (max-width: 480px) {
-    .heading {
-        font-size: 2em;
+    .projectcontent {
+        flex-direction: column;
     }
 
     .projectsummary {
-        margin-top: 2em;
+        margin-top: 3em;
     }
 
     .projectaccess {
-        margin: 1em 0 2em;
-    }
-
-    .projectlinks a {
-        padding: .5em 1em;
-        font-size: 0.9em;
-    }
-
-    .repositorylogin {
-        font-size: 0.9em;
-    }
-}
-
-/* Adjustments for new iPhone sizes */
-@media screen and (max-width: 414px) {
-    .projectwrapper {
-        margin: 4em 1em 0 1em;
-    }
-
-    .heading {
-        font-size: 1.8em;
+        margin: 2em 0 4em;
     }
 
     .projectdisplay {
-        margin-right: 0;
+        margin-right: 0; /* Remove margin for smaller screens */
+        width: 100%; /* Ensure the container takes full width */
+        height: auto; /* Ensure the container height is automatic */
     }
 
     .projectdisplay img {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Ensure image fills the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .projectlinks {
+        flex-direction: column; /* Adjust for mobile view */
+        align-items: center; /* Center align for mobile view */
     }
 
     .projectlinks a {
-        padding: .5em 1em;
-        font-size: 0.8em;
-    }
-}
-
-/* Adjustments for new Android sizes */
-@media screen and (max-width: 360px) {
-    .projectwrapper {
-        margin: 4em 0.5em 0 0.5em;
-    }
-
-    .heading {
-        font-size: 1.5em;
-    }
-
-    .projectdisplay {
-        margin-right: 0;
-    }
-
-    .projectdisplay img {
-        width: 100%;
-        height: auto;
-    }
-
-    .projectlinks a {
-        padding: .4em 0.8em;
-        font-size: 0.8em;
-    }
-
-    .repositorylogin {
-        font-size: 0.8em;
+        margin-bottom: 1em; /* Add margin for spacing */
     }
 }
