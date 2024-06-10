@@ -131,19 +131,7 @@
         margin-bottom: 0;
         margin-right: 1em;
     }
-
-    .projectdisplay {
-        position: relative;
-        flex: 50% 0 0;
-        margin-right: 3em;
-    }
     
-    .projectdisplay img {
-        display: block;
-        min-width: 0;
-        max-width: 100%;
-    
-    }
 }
 
 @media screen and (max-width: 624px) {
@@ -166,18 +154,5 @@
 
     .projectaccess {
         margin: 2em 0 4em;
-    }
-
-    .projectdisplay {
-        position: relative;
-        flex: 50% 0 0;
-        margin-right: 3em;
-    }
-    
-    .projectdisplay img {
-        display: block;
-        min-width: 0;
-        max-width: 100%;
-    
     }
 }
