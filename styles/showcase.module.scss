@@ -20,6 +20,7 @@
     flex-grow: 1;
     align-items: flex-start;
     justify-content: space-between;
+    flex-direction: column; /* Adjust for mobile view */
 }
 
 .projectdetails {
@@ -32,8 +33,6 @@
 
 .projectsummary {
     margin-top: 6em;
-
-
 }
 
 .projectaccess {
@@ -47,6 +46,8 @@
 .projectlinks {
     margin-top: 2em;
     display: flex;
+    flex-direction: column; /* Adjust for mobile view */
+    align-items: center; /* Center align for mobile view */
 }
 
 .projectlinks a {
@@ -59,6 +60,7 @@
     font-size: 1em;
     padding: .7em 1.4em;
     font-family: inherit;
+    margin-bottom: 1em; /* Add margin for spacing */
 }
 
 .repository {
@@ -90,7 +92,6 @@
     display: block;
     min-width: 0;
     max-width: 100%;
-
 }
 
 .projectdisplay:after {
@@ -107,6 +108,7 @@
     background: #1e1e1e;
 }
 
+/* Media Queries for Responsive Design */
 @media screen and (min-width: 800px) {
     .projectwrapper {
         flex-direction: row;
@@ -131,7 +133,6 @@
         margin-bottom: 0;
         margin-right: 1em;
     }
-    
 }
 
 @media screen and (max-width: 624px) {
