@@ -2,8 +2,8 @@
     flex-grow: 0;
     font-weight: 700;
     font-size: 4em;
-    margin: 0;
-    // height: 2.5em;
+    margin: 0 0 1em 0;
+    text-align: center;
 }
 
 .projectwrapper {
@@ -115,7 +115,7 @@
     .heading {
         font-size: 2.5em;
         text-align: center;
-        margin: 0 0 1em 0;
+        margin: 1em 0;
     }
 
     .projectcontent {
@@ -126,11 +126,13 @@
     .projectsummary {
         margin-top: 2em;
         text-align: center;
+        padding: 0 1em;
     }
 
     .projectaccess {
         margin: 2em 0;
         text-align: center;
+        padding: 0 1em;
     }
 
     .projectdetails {
@@ -193,10 +195,12 @@
 
     .projectsummary {
         margin-top: 2em;
+        padding: 0 1em;
     }
 
     .projectaccess {
         margin: 1em 0 2em;
+        padding: 0 1em;
     }
 
     .projectlinks a {
