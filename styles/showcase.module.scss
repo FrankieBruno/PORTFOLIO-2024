@@ -20,7 +20,7 @@
     flex-grow: 1;
     align-items: flex-start;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: column; /* Adjust for mobile view */
 }
 
 .projectdetails {
@@ -46,8 +46,8 @@
 .projectlinks {
     margin-top: 2em;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Adjust for mobile view */
+    align-items: center; /* Center align for mobile view */
 }
 
 .projectlinks a {
@@ -60,7 +60,7 @@
     font-size: 1em;
     padding: .7em 1.4em;
     font-family: inherit;
-    margin-bottom: 1em;
+    margin-bottom: 1em; /* Add margin for spacing */
 }
 
 .repository {
@@ -86,19 +86,12 @@
     position: relative;
     flex: 50% 0 0;
     margin-right: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 }
 
 .projectdisplay img {
     display: block;
     min-width: 0;
     max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-
 }
 
 .projectdisplay:after {
@@ -115,6 +108,7 @@
     background: #1e1e1e;
 }
 
+/* Media Queries for Responsive Design */
 @media screen and (min-width: 800px) {
     .projectwrapper {
         flex-direction: row;
@@ -162,5 +156,4 @@
     .projectaccess {
         margin: 2em 0 4em;
     }
-    
 }
