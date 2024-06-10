@@ -1,7 +1,7 @@
 .heading {
     flex-grow: 0;
     font-weight: 700;
-    font-size: 4em;
+    font-size: 3em;
     margin: 0;
     // height: 2.5em;
 }
@@ -32,8 +32,6 @@
 
 .projectsummary {
     margin-top: 6em;
-
-
 }
 
 .projectaccess {
@@ -90,7 +88,6 @@
     display: block;
     min-width: 0;
     max-width: 100%;
-
 }
 
 .projectdisplay:after {
@@ -105,4 +102,173 @@
     border-radius: 1em;
     transform: translate(0, 50%);
     background: #1e1e1e;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1240px) {
+    .heading {
+        font-size: 2em;
+        margin: 1em 0;
+        text-align: center; /* Center align for better spacing */
+    }
+
+    .projectcontent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectsummary {
+        margin-top: 1em;
+        padding: 0 .5em;
+        text-align: center; /* Center align for better spacing */
+    }
+
+    .projectaccess {
+        margin: 2em 0;
+        text-align: center; /* Center align for better spacing */
+        padding: 0 1em;
+    }
+
+    .projectdetails {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+        flex: 30% 0 0;
+    }
+
+    .projectdisplay {
+        display: none;
+    }
+
+    .projectdisplay img {
+        display: none; /* Hide image for screens smaller than 1240px */
+    }
+
+    .projectlinks {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Ensure flex container is centered */
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .projectlinks a {
+        margin-bottom: 1em;
+        width: auto;
+        justify-content: center;
+    }
+}
+
+/* New media query for screens 732px and smaller */
+@media screen and (max-width: 732px) {
+    .heading {
+        font-size: 1.5em; /* Adjust font size */
+        margin: 0.5em 0; /* Adjust margin */
+        text-align: center;
+    }
+
+    .projectwrapper {
+        margin: 5em 1em 0 1em; /* Adjust margin */
+    }
+
+    .projectcontent {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Adjust height */
+    }
+
+    .projectsummary {
+        margin-top: 1em; /* Adjust margin */
+        padding: 0 0.5em; /* Adjust padding */
+        text-align: center;
+    }
+
+    .projectaccess {
+        margin: 1em 0; /* Adjust margin */
+        text-align: center;
+        padding: 0 0.5em; /* Adjust padding */
+    }
+
+    .projectdetails {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+        flex: 30% 0 0;
+    }
+
+    .projectlinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0 0.5em;
+    }
+
+    .projectlinks a {
+        margin-bottom: 0.5em; /* Adjust margin */
+        width: 50%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .heading {
+        font-size: 1.5em; /* Adjust font size */
+        margin: 0.2em 0; /* Adjust margin to scoot up */
+        text-align: center;
+    }
+
+    .projectwrapper {
+        margin: 2em 1em 0 1em; /* Adjust margin to scoot up */
+    }
+
+    .projectcontent {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Adjust height */
+    }
+
+    .projectsummary {
+        margin-top: 0.5em; /* Adjust margin */
+        padding: 0 0.5em; /* Adjust padding */
+        text-align: center;
+    }
+
+    .projectaccess {
+        margin: 0.5em 0; /* Adjust margin */
+        text-align: center;
+        padding: 0 0.5em; /* Adjust padding */
+    }
+
+    .projectdetails {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        padding: 0 0.5em; /* Adjust padding */
+    }
+
+    .projectlinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0 0.5em;
+        margin-bottom: 2em; /* Adjust margin-bottom to ensure visibility */
+    }
+
+    .projectlinks a {
+        margin-bottom: 0.5em; /* Adjust margin */
+        width: 80%; /* Adjust width for better visibility */
+        justify-content: center;
+        font-size: 0.9em; /* Adjust font size */
+        padding: 0.5em 1em; /* Adjust padding for better fit */
+    }
+
+    .projectlinks a:last-child {
+        margin-bottom: 1em; /* Ensure the last link has enough space */
+    }
 }
