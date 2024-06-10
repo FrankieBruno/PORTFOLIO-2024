@@ -45,6 +45,8 @@
 .projectlinks {
     margin-top: 2em;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align for mobile view */
 }
 
 .projectlinks a {
@@ -57,6 +59,7 @@
     font-size: 1em;
     padding: .7em 1.4em;
     font-family: inherit;
+    margin: 0.5em; /* Add margin for spacing */
 }
 
 .repository {
@@ -175,15 +178,48 @@
 
     .heading {
         font-size: 3em;
+        margin: 0 0 1em 0;
+    }
+
+    .projectsummary {
+        margin-top: 4em;
+        padding: 0 2em;
+        text-align: center;
+    }
+
+    .projectaccess {
+        margin: 2em 0 4em;
+        padding: 0 2em;
+        text-align: center;
+    }
+
+    .projectdetails {
+        flex: none;
+        width: 100%;
+        padding: 0 2em;
+        text-align: center;
     }
 
     .projectdisplay {
-        margin-right: 0;
+        margin: 2em 0;
+        width: 100%;
+        height: auto;
     }
 
     .projectdisplay img {
         width: 100%;
         height: auto;
+    }
+
+    .projectlinks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projectlinks a {
+        margin-bottom: 1em;
+        width: auto;
+        justify-content: center;
     }
 }
 
@@ -191,16 +227,19 @@
 @media screen and (max-width: 480px) {
     .heading {
         font-size: 2em;
+        margin: 1em 0;
     }
 
     .projectsummary {
         margin-top: 2em;
         padding: 0 1em;
+        text-align: center;
     }
 
     .projectaccess {
         margin: 1em 0 2em;
         padding: 0 1em;
+        text-align: center;
     }
 
     .projectlinks a {
@@ -221,10 +260,13 @@
 
     .heading {
         font-size: 1.8em;
+        margin: 1em 0;
     }
 
     .projectdisplay {
         margin-right: 0;
+        width: 100%;
+        height: auto;
     }
 
     .projectdisplay img {
@@ -235,6 +277,7 @@
     .projectlinks a {
         padding: .5em 1em;
         font-size: 0.8em;
+        margin-bottom: 1em;
     }
 }
 
@@ -246,10 +289,13 @@
 
     .heading {
         font-size: 1.5em;
+        margin: 1em 0;
     }
 
     .projectdisplay {
         margin-right: 0;
+        width: 100%;
+        height: auto;
     }
 
     .projectdisplay img {
@@ -260,6 +306,7 @@
     .projectlinks a {
         padding: .4em 0.8em;
         font-size: 0.8em;
+        margin-bottom: 1em;
     }
 
     .repositorylogin {
