@@ -86,12 +86,13 @@
     position: relative;
     flex: 50% 0 0;
     margin-right: 3em;
+    overflow: hidden; /* Ensure no overflow */
 }
 
 .projectdisplay img {
     display: block;
-    min-width: 0;
-    max-width: 100%;
+    width: 100%; /* Ensure image fills the container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .projectdisplay:after {
@@ -155,5 +156,16 @@
 
     .projectaccess {
         margin: 2em 0 4em;
+    }
+
+    .projectdisplay {
+        margin-right: 0; /* Remove margin for smaller screens */
+        width: 100%; /* Ensure the container takes full width */
+        height: auto; /* Ensure the container height is automatic */
+    }
+
+    .projectdisplay img {
+        width: 100%; /* Ensure image fills the container */
+        height: auto; /* Maintain aspect ratio */
     }
 }
